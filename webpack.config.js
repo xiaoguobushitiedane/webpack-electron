@@ -38,7 +38,7 @@ if(process.env.type=="build"){
 //暴露模块
 module.exports={
     //构建环境
-    target: 'electron-renderer',//web
+    //target: 'electron-renderer',//web
     //调试工具
     devtool:'source-map',
     //入口文件
