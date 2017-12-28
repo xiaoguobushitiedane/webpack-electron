@@ -2,12 +2,13 @@
   "name": "demo",
   "version": "1.0.0",
   "description": "luowei ",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open",
     "dev": "set type=dev&webpack",
     "build": "set type=build&webpack",
-    "electron": "webpack && electron .",
+    "electron1": "webpack-dashboard -- webpack-dev-server --progress --colors",
+    "electron2": "electron main.js",
     "packager": "webpack && electron-packager . --platform=win32 --electron-version=1.7.9  --overwrite"
   },
   "author": "",

@@ -15,8 +15,8 @@ app.on('ready', () => {
   // 创建一个新的浏览器窗口
   mainWindow = new BrowserWindow({ width: 1024, height: 768 });
   // 并且装载应用的index.html页面
-  mainWindow.loadURL(`file://${__dirname}/src/index.html`);
-
+  //mainWindow.loadURL(`file://${__dirname}/src/index.html`);
+  mainWindow.loadURL(`http://192.168.128.153:1717/`);
   // 打开开发工具页面
   mainWindow.webContents.openDevTools();
  // 当所有的窗口被关闭后退出应用
