@@ -50,6 +50,9 @@ module.exports={
         filename:"[name].js",//和入口文件匹配
         publicPath:website.publicPath//配置公共路径
     },
+    resolve: {
+        extensions: ['.js', '.vue']
+    },
     //模块,解读css
     module:{
         //转换规则
@@ -118,7 +121,12 @@ module.exports={
                     // }
                 },
                 exclude:/node_modules/ //去除node_modules文件夹
+            },
+            {
+                test: /\.vue$/, 
+                loader: 'vue-loader'
             }
+            
         ]
     },
     //插件
