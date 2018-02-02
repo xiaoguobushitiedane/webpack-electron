@@ -51,7 +51,10 @@ module.exports={
         publicPath:website.publicPath//配置公共路径
     },
     resolve: {
-        extensions: ['.js', '.vue']
+        //extensions: ['.js', '.vue']
+		alias: {
+            vue: 'vue/dist/vue.js',
+        }
     },
     //模块,解读css
     module:{
